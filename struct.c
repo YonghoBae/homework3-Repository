@@ -39,9 +39,13 @@ int main()
     printf("st3.grade = %c\n", st3.grade);         // st3.grade 출력
     printf("\n");
 
-    if(st3 == st2) /* not working */
-        printf("equal\n");
-    else
+    if (st2.lastName != st3.lastName)
         printf("not equal\n");
-    return 0;
+    if (st2.studentId != st3.studentId)
+        printf("not equal\n");
+    if (st2.grade != st3.grade)
+        printf("not equal\n"); // st2, st3각 요소 비교후 틀리면 not equal 출력
+    else
+        printf("equal\n"); // st2,st3가 모두 같으면 equal 출력
+    return 0;              // 0리턴
 }
